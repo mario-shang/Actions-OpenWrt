@@ -30,10 +30,6 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci
 mkdir package/community
 pushd package/community
 
-git clone --depth=1 https://github.com/frainzy1477/luci-app-clash
-git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
-git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb
-
 # # Add mentohust & luci-app-mentohust.
 # git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
 # git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
@@ -44,12 +40,15 @@ git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb
 # # Add OpenClash
 # git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 
+# # Add OpenClash
+# git clone --depth=1 https://github.com/frainzy1477/luci-app-clash
+
 # # Add luci-app-argon-config
 # git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
 
-# # Add luci-app-vssr (need lua-maxminddb)
-# git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb
-# git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
+# Add luci-app-vssr (need lua-maxminddb)
+git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb
+git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 
 # # Add luci-app-onliner (need luci-app-nlbwmon)
 # git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
