@@ -22,37 +22,17 @@ popd
 # 更改主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
 
-echo '添加Clash'
-git clone https://github.com/frainzy1477/luci-app-clash package/lean/luci-app-clash
-echo 'CONFIG_PACKAGE_luci-app-clash=y' >> .config
-
-echo '添加Passwall'
-echo 'CONFIG_PACKAGE_luci-app-passwall=y' >> .config
-echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks=y' >> .config
-echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan=y' >> .config
-echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_simple-obfs=n' >> .config
-echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin=n' >> .config
-echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Brook=n' >> .config
-echo 'CONFIG_PACKAGE_luci-app-passwall_INCLUDE_kcptun=n' >> .config
-echo 'CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y'  >> .config
-
-echo '添加luci-app-vssr'
-git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
-git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
-echo 'CONFIG_PACKAGE_luci-app-vssr=y' >> .config
-echo 'CONFIG_PACKAGE_luci-app-vssr_INCLUDE_V2ray=y' >> .config
-echo 'CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Trojan=y' >> .config
-echo 'CONFIG_PACKAGE_luci-app-vssr_INCLUDE_ShadowsocksR_Server=y' >> .config
-echo 'CONFIG_PACKAGE_luci-app-vssr_INCLUDE_ShadowsocksR_Socks=y' >> .config
-echo 'CONFIG_PACKAGE_luci-i18n-vssr-zh-cn=y'  >> .config
-
 # 更改时区
 # sed -i "s/'UTC'/'CST-8'\n        set system.@system[-1].zonename='Asia\/Shanghai'/g" ./package/base-files/files/bin/config_generate
 
-# # Start Add Package ---------------------------------------------------------
-# # Clone community packages to package/community
-# mkdir package/community
-# pushd package/community
+# Start Add Package ---------------------------------------------------------
+# Clone community packages to package/community
+mkdir package/community
+pushd package/community
+
+git clone --depth=1 https://github.com/frainzy1477/luci-app-clash
+git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
+git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb
 
 # # Add mentohust & luci-app-mentohust.
 # git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
@@ -86,5 +66,5 @@ echo 'CONFIG_PACKAGE_luci-i18n-vssr-zh-cn=y'  >> .config
 # # Add OpenAppFilter
 # git clone --depth=1 https://github.com/destan19/OpenAppFilter
 
-# # End Add Package  ---------------------------------------------------------
-# popd
+# End Add Package  ---------------------------------------------------------
+popd
