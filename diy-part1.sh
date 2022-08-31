@@ -10,9 +10,20 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
-# Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+# Add helloworld passwall source
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 
-# Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+# Add Lienol source (need remove clash packages)
+# sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+
+# Change R4A-Gi DTS File (Breed Direct Burning Version)
+wget -O target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-3g-v2.dtsi https://raw.githubusercontent.com/zys91/Actions-OpenWrt/master/src/mt7621_xiaomi_mi-router-4a-3g-v2-modified.dtsi
+export imsize=$(grep  -a -n -e 'define Device/xiaomi_mi-router-4a-gigabit' target/linux/ramips/image/mt7621.mk|cut -d ":" -f 1)
+export imsize=$(expr $imsize + 3)
+export imsize=$(echo $imsize"s")
+sed -i "$imsize/IMAGE_SIZE := .*/IMAGE_SIZE := 16064k/" target/linux/ramips/image/mt7621.mk
+
+# Fix R4A-Gi WAN/LAN Random MAC Bug (Origin Version + Fix Mac Bug)
+# wget -O target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-3g-v2.dtsi https://raw.githubusercontent.com/zys91/Actions-OpenWrt/master/src/mt7621_xiaomi_mi-router-4a-3g-v2-mac-fixed.dtsi 
