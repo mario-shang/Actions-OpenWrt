@@ -1,44 +1,5 @@
 CONFIG_TARGET_ramips=y
 CONFIG_TARGET_ramips_mt7620=y
 CONFIG_TARGET_ramips_mt7620_DEVICE_xiaomi_miwifi-mini=y
-CONFIG_PACKAGE_bash=y
-CONFIG_PACKAGE_boost=y
-CONFIG_PACKAGE_boost-date_time=y
-CONFIG_PACKAGE_boost-program_options=y
-CONFIG_PACKAGE_boost-system=y
-CONFIG_PACKAGE_ipt2socks=y
-CONFIG_PACKAGE_kmod-crypto-des=y
-CONFIG_PACKAGE_kmod-crypto-md5=y
-CONFIG_PACKAGE_libmaxminddb=y
-CONFIG_PACKAGE_libmbedtls=y
-CONFIG_PACKAGE_libncurses=y
-CONFIG_PACKAGE_libreadline=y
-CONFIG_PACKAGE_libstdcpp=y
-CONFIG_PACKAGE_lua-cjson=y
-CONFIG_PACKAGE_lua-maxminddb=y
-CONFIG_PACKAGE_luasocket=y
-# CONFIG_PACKAGE_luci-app-accesscontrol is not set
-# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_NONE_V2RAY is not set
+
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
-# CONFIG_PACKAGE_luci-app-upnp is not set
-# CONFIG_PACKAGE_luci-app-vlmcsd is not set
-# CONFIG_PACKAGE_luci-app-vsftpd is not set
-# CONFIG_PACKAGE_luci-app-wol is not set
-CONFIG_PACKAGE_shadowsocks-libev-ss-local=y
-CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
-CONFIG_PACKAGE_simple-obfs-client=y
-CONFIG_PACKAGE_terminfo=y
-CONFIG_PACKAGE_trojan=y
-CONFIG_PACKAGE_xray-core=y
-CONFIG_PACKAGE_xray-plugin=y
-CONFIG_boost-compile-visibility-hidden=y
-CONFIG_boost-runtime-shared=y
-CONFIG_boost-static-and-shared-libs=y
-CONFIG_boost-variant-release=y
-CONFIG_PACKAGE_etherwake=y
-CONFIG_PACKAGE_libuuid=y
-CONFIG_PACKAGE_miniupnpd=y
-CONFIG_PACKAGE_vlmcsd=y
-CONFIG_PACKAGE_vsftpd-alt=y
-CONFIG_PACKAGE_wol=y
-CONFIG_VSFTPD_USE_UCI_SCRIPTS=y
