@@ -1,118 +1,27 @@
 CONFIG_TARGET_ramips=y
 CONFIG_TARGET_ramips_mt7620=y
 CONFIG_TARGET_ramips_mt7620_DEVICE_xiaomi_miwifi-mini=y
-CONFIG_PACKAGE_bash=y
-# CONFIG_PACKAGE_coremark is not set
-# CONFIG_PACKAGE_curl is not set
-# CONFIG_PACKAGE_ddns-scripts is not set
-# CONFIG_PACKAGE_ddns-scripts_aliyun is not set
-# CONFIG_PACKAGE_ddns-scripts_dnspod is not set
-# CONFIG_PACKAGE_dns2socks is not set
-# CONFIG_PACKAGE_dns2tcp is not set
 # CONFIG_PACKAGE_etherwake is not set
-# CONFIG_PACKAGE_iptables-mod-extra is not set
-CONFIG_PACKAGE_libmaxminddb=y
-CONFIG_PACKAGE_libmbedtls=y
-CONFIG_PACKAGE_libncurses=y
-CONFIG_PACKAGE_libreadline=y
-# CONFIG_PACKAGE_libustream-openssl is not set
-CONFIG_PACKAGE_lua-cjson=y
-CONFIG_PACKAGE_lua-maxminddb=y
-CONFIG_PACKAGE_luasocket=y
+# CONFIG_PACKAGE_kmod-ipt-offload is not set
+# CONFIG_PACKAGE_kmod-nf-conntrack-netlink is not set
+# CONFIG_PACKAGE_kmod-nf-flow is not set
+# CONFIG_PACKAGE_kmod-tcp-bbr is not set
 # CONFIG_PACKAGE_luci-app-accesscontrol is not set
-# CONFIG_PACKAGE_luci-app-arpbind is not set
-# CONFIG_PACKAGE_luci-app-autoreboot is not set
 # CONFIG_PACKAGE_luci-app-ddns is not set
-# CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk is not set
-# CONFIG_PACKAGE_luci-app-filetransfer is not set
 # CONFIG_PACKAGE_luci-app-nlbwmon is not set
-# CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
-# CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
-# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client is not set
+# CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_NONE_V2RAY is not set
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
 # CONFIG_PACKAGE_luci-app-turboacc is not set
 # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_BBR_CCA is not set
 # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING is not set
 # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_PDNSD is not set
-# CONFIG_PACKAGE_luci-app-upnp is not set
 # CONFIG_PACKAGE_luci-app-vlmcsd is not set
 # CONFIG_PACKAGE_luci-app-vsftpd is not set
-CONFIG_PACKAGE_luci-app-vssr=y
-CONFIG_PACKAGE_luci-app-vssr_INCLUDE_Xray=y
 # CONFIG_PACKAGE_luci-app-wol is not set
-CONFIG_PACKAGE_luci-i18n-vssr-zh-cn=y
-# CONFIG_PACKAGE_microsocks is not set
-# CONFIG_PACKAGE_miniupnpd is not set
 # CONFIG_PACKAGE_nlbwmon is not set
-# CONFIG_PACKAGE_openssl-util is not set
-# CONFIG_PACKAGE_ppp is not set
-CONFIG_PACKAGE_shadowsocks-libev-ss-local=y
-CONFIG_PACKAGE_shadowsocks-libev-ss-redir=y
-# CONFIG_PACKAGE_shellsync is not set
-CONFIG_PACKAGE_simple-obfs-client=y
-# CONFIG_PACKAGE_tcping is not set
-CONFIG_PACKAGE_terminfo=y
+# CONFIG_PACKAGE_pdnsd-alt is not set
 # CONFIG_PACKAGE_vlmcsd is not set
 # CONFIG_PACKAGE_vsftpd-alt is not set
 # CONFIG_PACKAGE_wol is not set
-# CONFIG_PACKAGE_wpad-openssl is not set
 CONFIG_PACKAGE_xray-core=y
-# CONFIG_QT5_INCLUDE_ATOMIC is not set
-CONFIG_LIBCURL_COOKIES=y
-# CONFIG_LIBCURL_CRYPTO_AUTH is not set
-# CONFIG_LIBCURL_DICT is not set
-CONFIG_LIBCURL_FILE=y
-CONFIG_LIBCURL_FTP=y
-# CONFIG_LIBCURL_GNUTLS is not set
-# CONFIG_LIBCURL_GOPHER is not set
-CONFIG_LIBCURL_HTTP=y
-# CONFIG_LIBCURL_IMAP is not set
-# CONFIG_LIBCURL_LDAP is not set
-# CONFIG_LIBCURL_LIBCURL_OPTION is not set
-# CONFIG_LIBCURL_LIBIDN2 is not set
-# CONFIG_LIBCURL_MBEDTLS is not set
-# CONFIG_LIBCURL_NGHTTP2 is not set
-# CONFIG_LIBCURL_NOSSL is not set
-CONFIG_LIBCURL_NO_SMB="!"
-CONFIG_LIBCURL_OPENSSL=y
-# CONFIG_LIBCURL_POP3 is not set
-CONFIG_LIBCURL_PROXY=y
-# CONFIG_LIBCURL_RTSP is not set
-# CONFIG_LIBCURL_SMTP is not set
-# CONFIG_LIBCURL_SSH2 is not set
-# CONFIG_LIBCURL_TELNET is not set
-# CONFIG_LIBCURL_TFTP is not set
-# CONFIG_LIBCURL_THREADED_RESOLVER is not set
-# CONFIG_LIBCURL_TLS_SRP is not set
-# CONFIG_LIBCURL_UNIX_SOCKETS is not set
-# CONFIG_LIBCURL_VERBOSE is not set
-# CONFIG_LIBCURL_WOLFSSL is not set
-# CONFIG_LIBCURL_ZLIB is not set
-# CONFIG_LIBCURL_ZSTD is not set
-CONFIG_PACKAGE_kmod-crypto-arc4=y
-CONFIG_PACKAGE_kmod-crypto-ecb=y
-CONFIG_PACKAGE_kmod-crypto-sha1=y
-CONFIG_PACKAGE_kmod-ipt-extra=y
-CONFIG_PACKAGE_kmod-ipt-offload=y
-CONFIG_PACKAGE_kmod-macvlan=y
-CONFIG_PACKAGE_kmod-mppe=y
-CONFIG_PACKAGE_kmod-nf-conntrack-netlink=y
-CONFIG_PACKAGE_kmod-nf-flow=y
-CONFIG_PACKAGE_kmod-ppp=y
-# CONFIG_PACKAGE_kmod-ppp-synctty is not set
-# CONFIG_PACKAGE_kmod-pppoa is not set
-CONFIG_PACKAGE_kmod-pppoe=y
-# CONFIG_PACKAGE_kmod-pppol2tp is not set
-CONFIG_PACKAGE_kmod-pppox=y
-# CONFIG_PACKAGE_kmod-pptp is not set
-# CONFIG_PACKAGE_kmod-qca-nss-ecm-noload is not set
-# CONFIG_PACKAGE_kmod-qca-nss-ecm-premium is not set
-# CONFIG_PACKAGE_kmod-qca-nss-ecm-premium-noload is not set
-# CONFIG_PACKAGE_kmod-qca-nss-ecm-standard is not set
-CONFIG_PACKAGE_kmod-slhc=y
-CONFIG_PACKAGE_kmod-tcp-bbr=y
-CONFIG_PACKAGE_libcurl=y
-CONFIG_PACKAGE_libuuid=y
-CONFIG_PACKAGE_lua-neturl=y
 # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_CM is not set
-CONFIG_PACKAGE_luci-lib-fs=y
-CONFIG_PACKAGE_resolveip=y
